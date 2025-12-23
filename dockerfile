@@ -1,6 +1,7 @@
 FROM node:20
 WORKDIR /app
-COPY . .
+COPY  calculator.html .
+COPY  server.js .
 RUN npm install 
 EXPOSE 5000
 CMD ["node","server.js"]
